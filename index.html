@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamscape</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+
+    <!-- use an import map to link to the Three.js CDN -->
+    <script type="importmap">
+          {
+            "imports": {
+              "three": "https://unpkg.com/three@0.162.0/build/three.module.js",
+              "three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/",
+              "three/libs/": "https://unpkg.com/three@0.162.0/examples/libs/"
+            }
+          }
+        </script>
+
+    <!-- Link to your Javascript file as a type="module", this will execute the file after the HTML is loaded -->
+    <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+  <audio id="faeSound" src="assets/fae-sound.mp3" preload="auto"></audio>
+   <canvas id="bg"></canvas>
+
+</body>
+
+</html>

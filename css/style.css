@@ -1,0 +1,36 @@
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+main {
+    position: absolute;
+    width: 100vw;
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    margin: 0px auto;
+    padding: 120px 0px;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*setting the default to 10px */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
